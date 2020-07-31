@@ -30,6 +30,8 @@
 
   /* size */
   --size-border-radius: 4px;
+  /* Animation */
+  --animation-duration: 300ms;
 }
 
 /* Universal tags */
@@ -148,3 +150,54 @@ button {
   border: 2px solid var(--color-white);
   border-radius: 4px;
   color: var(--color-white);
+}
+/* section common */
+
+.section {
+  text-align: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  font-size: 70px;
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  line-height: 170px;
+  margin: auto;
+  margin-bottom: 16px;
+  color: var(--color-dark-blue);
+}
+.major__title,
+.major__description {
+  color: var(--color-dark-grey);
+}
+.major__description {
+  font-size: var(--font-small);
+}
+
+.major__icon i:hover {
+  color: var(--color-dark-white);
+  transform: rotate(330deg) scale(1.2);
+}
+.major__icon i {
+  transition: all var(--animation-duration) ease;
+}
+
+/* .job {
+  display: flex;
+} */
+
+.job__period {
+  font-size: var(--font-small);
+}

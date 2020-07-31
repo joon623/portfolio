@@ -29,7 +29,6 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-
     <!-- Navbar -->
     <nav id="navbar">
       <div class="navbar__logo">
@@ -49,7 +48,7 @@
     </nav>
 
     <!-- Home -->
-    <section id="home">
+    <section id="home" class="section">
       <img
         src="imgs/KakaoTalk_20200730_122802564.jpg"
         alt="image"
@@ -64,7 +63,7 @@
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
       <h1>About me</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
@@ -75,7 +74,7 @@
       <div class="about__majors">
         <div class="major">
           <div class="major__icon"><i class="fab fa-js-square"></i></div>
-          <div class="major__title">Javascript</div>
+          <h2 class="major__title">Javascript</h2>
           <div class="major__description">
             Javascript
             <br />
@@ -83,7 +82,7 @@
         </div>
         <div class="major">
           <div class="major__icon"><i class="fab fa-css3"></i></div>
-          <div class="major__title">css</div>
+          <h2 class="major__title">CSS</h2>
           <div class="major__description">
             CSS
             <br />
@@ -91,28 +90,41 @@
         </div>
         <div class="major">
           <div class="major__icon"><i class="fab fa-react"></i></div>
-          <div class="major__title">React/div>
-          <div class="major__description">
+          <h2 class="major__title">
             React
-            <br />
-          </div>
+            <div class="major__description">
+              React
+              <br />
+            </div>
+          </h2>
         </div>
       </div>
       <div class="about__jobs">
         <div class="job">
-          <img src="" alt="" class="job__logo" />
-          <p class="job__name"></p>
-          <p class="job__period"></p>
+          <img src="imgs/images.jpg" alt="" class="job__logo" />
+          <h2 class="job__name">경희대학교</h2>
+          <p class="job__period">2014 ~ 2020.08</p>
+        </div>
+        <div class="job"></div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img src="imgs/images.jpg" alt="" class="job__logo" />
+          <h2 class="job__name">경희대학교</h2>
+          <p class="job__period">2014 ~ 2020.08</p>
         </div>
         <div class="job"></div>
       </div>
     </section>
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section">
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis iure ducimus, molestias sunt est perspiciatis veniam qui earum quisquam tenetur. Quae iste omnis blanditiis numquam doloribus minima harum aliquid consequuntur.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+        iure ducimus, molestias sunt est perspiciatis veniam qui earum quisquam
+        tenetur. Quae iste omnis blanditiis numquam doloribus minima harum
+        aliquid consequuntur.
       </p>
       <div class="skillset">
         <div class="skillset__left">
@@ -186,58 +198,75 @@
       </div>
     </section>
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="section">
       <h1>My work</h1>
       <h3>projects</h3>
       <div class="work__categories">
-        <button class="category__btn">All<span class="category__count">8</span></button>
-        <button class="category__btn">Front-End<span class="category__count">3</span></button>
-        <button class="category__btn">Back-End<span class="category__count">3</span></button>
-        <button class="category__btn">Mobile<span class="category__count">2</span></button>
+        <button class="category__btn">
+          All<span class="category__count">8</span>
+        </button>
+        <button class="category__btn">
+          Front-End<span class="category__count">3</span>
+        </button>
+        <button class="category__btn">
+          Back-End<span class="category__count">3</span>
+        </button>
+        <button class="category__btn">
+          Mobile<span class="category__count">2</span>
+        </button>
       </div>
 
-
       <div class="work__project">
-        <a href=""
-         class="project"
-         target="blank">
-         <img src="" alt="" class="project__img">
-         <div class="project__description">
-           <h3>youtube site</h3>
-           <span>HTML,css, javascript</span>
-         </div>
+        <a href="" class="project" target="blank">
+          <img src="" alt="" class="project__img" />
+          <div class="project__description">
+            <h3>youtube site</h3>
+            <span>HTML,css, javascript</span>
+          </div>
         </a>
       </div>
     </section>
     <!-- Testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
       <h1>Testimonial</h1>
       <h3>See what they say about me</h3>
       <div class="testimonials">
         <div class="testimonial">
-          <img src="imgs/testimonial/people1.jpg" 
-          alt="testimonial"
-          class="testimonial" 
+          <img
+            src="imgs/testimonial/people1.jpg"
+            alt="testimonial"
+            class="testimonial"
           />
           <div class="testimonal__speech-bubble">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium voluptas placeat nemo ipsa nam. Modi placeat asperiores, voluptatem totam animi cum voluptate. Magni eius voluptates culpa suscipit, et error id?</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Accusantium voluptas placeat nemo ipsa nam. Modi placeat
+              asperiores, voluptatem totam animi cum voluptate. Magni eius
+              voluptates culpa suscipit, et error id?
+            </p>
           </div>
           <p class="name"><a href="">ellie</a></p>
         </div>
         <div class="testimonial">
-          <img src="imgs/testimonial/people1.jpg" 
-          alt="testimonial"
-          class="testimonial" 
+          <img
+            src="imgs/testimonial/people1.jpg"
+            alt="testimonial"
+            class="testimonial"
           />
           <div class="testimonal__speech-bubble">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium voluptas placeat nemo ipsa nam. Modi placeat asperiores, voluptatem totam animi cum voluptate. Magni eius voluptates culpa suscipit, et error id?</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Accusantium voluptas placeat nemo ipsa nam. Modi placeat
+              asperiores, voluptatem totam animi cum voluptate. Magni eius
+              voluptates culpa suscipit, et error id?
+            </p>
           </div>
           <p class="name"><a href="">ellie</a></p>
         </div>
       </div>
     </section>
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
       <h1 class="contact__title">Let`s talk</h1>
       <h2 class="contact__email">coolday@gmail.com</h2>
       <div class="contact__links">
