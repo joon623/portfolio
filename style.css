@@ -160,6 +160,7 @@ button {
 }
 .section__container {
   max-width: 1200px;
+  margin: auto;
 }
 
 /* About */
@@ -353,6 +354,9 @@ button {
 #testimonials {
   background-color: var(--color-light-grey);
 }
+#testimonials .section__container {
+  margin: auto;
+}
 
 .testimonials {
   margin: 40px;
@@ -383,7 +387,7 @@ button {
   color: var(--color-orange);
 }
 .testimonal__speech-bubble p {
-  color: var(--color-blue);
+  color: var(--color-black);
 }
 
 /* Contact */
