@@ -93,12 +93,21 @@ button {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-blue);
+  /* background-color: var(--color-blue); */
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  display: sticky;
+  position: fixed;
+  width: 100%;
+  transition: all var(--animation-duration) ease-in;
 }
 
+#navbar.navbar--dark {
+  background-color: var(--color-blue);
+  z-index: 999;
+}
 .navbar__menu {
   display: flex;
 }
@@ -125,7 +134,7 @@ button {
 .navbar__toggle-btn {
   position: absolute;
   right: 32px;
-  top: 43px;
+  top: 23px;
   font-size: 24px;
   color: var(--color-white);
   display: none;
@@ -136,6 +145,7 @@ button {
 #home {
   background: url("imgs/배경.png") center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
