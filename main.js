@@ -39,6 +39,21 @@ document.addEventListener("scroll", () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
+//  Show "arrow up" button when scrolling
+const arrowUp = document.querySelector(".arrow-up");
+document.addEventListener("scroll", () => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.classList.add("visible");
+  } else {
+    arrowUp.classList.remove("visible");
+  }
+});
+
+// Handle click on the "arrow up" button
+arrowUp.addEventListener("click", () => {
+  console.log("ssdsf");
+  scrollIntoViews("#home");
+});
 function scrollIntoViews(selector) {
   const move_button = document.querySelector(selector);
   move_button.scrollIntoView({ behavior: "smooth" });
