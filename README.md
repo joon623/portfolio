@@ -1,2 +1,2 @@
-# portfolio Link page 입니다.
+# portfolio
 jun`s portfolio
