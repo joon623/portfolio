@@ -41,7 +41,7 @@
 
 body {
   margin: 0px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   cursor: default;
 }
 
@@ -89,11 +89,11 @@ button {
   border: none;
   outline: none;
 }
+
 /* Navbar */
 #navbar {
   display: flex;
   justify-content: space-between;
-  /* background-color: var(--color-blue); */
   background-color: transparent;
   align-items: center;
   color: var(--color-white);
@@ -108,6 +108,7 @@ button {
   background-color: var(--color-blue);
   z-index: 999;
 }
+
 .navbar__menu {
   display: flex;
 }
@@ -116,6 +117,7 @@ button {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
 }
+
 .navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
@@ -141,7 +143,7 @@ button {
 /* Home */
 
 #home {
-  background: url("imgs/배경.png") center/cover no-repeat;
+  background: url('imgs/배경.png') center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -217,12 +219,21 @@ button {
   transition: all var(--animation-duration) ease;
 }
 
-/* .job {
-  display: flex;
-} */
-
 .job__period {
   font-size: var(--font-small);
+}
+
+.about__jobs {
+  margin-bottom: 35px;
+}
+
+.job__logo {
+  width: 250px;
+  height: 250px;
+}
+
+.job__logo[alt='wecode'] {
+  border-radius: 50%;
 }
 
 /* Skill */
@@ -279,6 +290,7 @@ button {
 .work__categories {
   margin: 40px;
 }
+
 .category__btn {
   border: 1px solid var(--color-dark-white);
   border-radius: var(--size-border-radius);
@@ -292,11 +304,13 @@ button {
   background-color: var(--color-blue);
   color: var(--color-white);
 }
+
 .category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
-  top: 0;
+  top: 5px;
 }
+
 .category__count {
   border-radius: 50%;
   background-color: var(--color-orange);
@@ -309,7 +323,6 @@ button {
   position: relative;
   top: -20px;
   right: 16px;
-  /* left: 4px; */
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
   position: absolute;
@@ -322,6 +335,7 @@ button {
   opacity: 1;
   transition: all var(--animation-duration) ease-out;
 }
+
 .work__projects.anim-out {
   opacity: 0;
   transform: scale(0.96) translateY(40px);
@@ -355,24 +369,22 @@ button {
   background-color: var(--color-black);
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   opacity: 0;
   transform: translateY(10px);
   transition: all var(--animation-duration) ease-in;
 }
 
-.project:hover .project__description {
+.project__description:hover {
   opacity: 0.8;
-  transform: translateY(0px);
+  transform: translateY(0);
 }
+
 .project__description h3 {
   color: var(--color-orange);
 }
 
 .project__description h3::after {
-  content: "";
+  content: '';
   width: 25px;
   height: 2px;
   background-color: var(--color-dark-white);
@@ -387,6 +399,7 @@ button {
 #testimonials {
   background-color: lightgrey;
 }
+
 #testimonials .section__container {
   margin: auto;
 }
@@ -399,17 +412,21 @@ button {
   display: flex;
   margin: 32px 0;
 }
+
 .testimonial__avatar {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
+
 .testimonial__avatar:nth-child(odd) {
   margin-right: 40px;
 }
+
 .testimonial__avatar:nth-child(even) {
   margin-left: 40px;
 }
+
 .testimonal__speech-bubble {
   padding: 18px;
   background-color: var(--color-white);
@@ -419,6 +436,7 @@ button {
 .testimonal__speech-bubble a {
   color: var(--color-orange);
 }
+
 .testimonal__speech-bubble p {
   color: var(--color-black);
 }
@@ -445,13 +463,16 @@ button {
   display: flex;
   justify-content: center;
 }
+
 .contact__links i {
   padding: 20px;
 }
+
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-orange);
 }
+
 /* Scroll */
 .arrow-up {
   position: fixed;
@@ -467,6 +488,7 @@ button {
   transition: all 300ms ease-in;
   pointer-events: none;
 }
+
 .arrow-up.visible {
   opacity: 1;
   pointer-events: auto;
@@ -482,37 +504,46 @@ button {
     align-items: flex-start;
     background-color: var(--color-blue);
   }
+
   #navbar.navbar--dark {
     padding: 16px;
   }
+
   .navbar__menu {
     flex-direction: column;
     text-align: center;
     width: 100%;
     display: none;
   }
+
   .navbar__menu.open {
     display: block;
   }
+
   .navbar__toggle-btn {
     display: block;
     top: 16px;
     right: 16px;
     font-size: var(--font-medium);
   }
+
   .section {
     padding: 16px;
     padding-top: 45px;
   }
+
   .about__majors {
     flex-direction: column;
   }
+
   .major {
     margin-bottom: 38px;
   }
+
   .skillset {
     flex-direction: column;
   }
+
   .category__btn {
     margin: 4px 0;
     width: 100%;
