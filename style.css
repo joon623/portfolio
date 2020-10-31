@@ -88,6 +88,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  padding: 0;
 }
 
 /* Navbar */
@@ -558,6 +559,7 @@ button {
     flex-direction: column;
     align-items: center;
   }
+
   .testimonial__avatar {
     width: 120px;
     height: 120px;
