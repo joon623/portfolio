@@ -410,12 +410,13 @@ button {
 
 .testimonial {
   display: flex;
+  align-items: center;
   margin: 32px 0;
 }
 
 .testimonial__avatar {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
 
