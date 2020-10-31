@@ -97,7 +97,7 @@ button {
   background-color: transparent;
   align-items: center;
   color: var(--color-white);
-  padding: 16px;
+  padding: 0 16px;
   display: sticky;
   position: fixed;
   width: 100%;
